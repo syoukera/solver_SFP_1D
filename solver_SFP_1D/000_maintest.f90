@@ -23,9 +23,7 @@
         call scl_trans        
 !
 !   -------- data output --------------
-!
-        print *, "aaa"
-        
+!        
         if (mod(ntime,out_step).eq.0) then
             n_out = n_out+1
             call data_output(n_out)
